@@ -1,0 +1,29 @@
+
+
+
+myvenv\WScripts\activate
+
+python manage.py runserver 
+
+python manage.py shell
+
+from kut.models import Problem
+Problem.objects.all()
+
+Problem.objects.create(prob_id=2, title='AA', body_desc='A', input_desc='B', output_desc='C', time_limit=1, memory_limit=1)
+
+
+
+
+
+---------------------------------
+pythonanywhere 에 깃 푸쉬할 때 : 
+로컬
+git status
+git add --all
+git commit -m "XXXX"
+git push
+
+pythonanywhere
+cd django-blog
+git pull
